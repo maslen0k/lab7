@@ -9,13 +9,13 @@ public class Main {
         Author<String> authorOne = new Author<>();
         String steeh;
         String[] strokee;
-        authorOne.setName("Friedrich Nietzsche");
+        authorOne.setName("Johann Goethe");
         Scanner scanner = new Scanner(System.in);
         while(check)
         {
-            System.out.println("Введите стихотворение, разделяя строки знаком \"/\" (0 - выход)");
+            System.out.println("Введите стихотворение, разделяя строки знаком \"/\" (Enter без ввода - выход)");
             steeh = scanner.nextLine();
-            if(steeh  == "0" || steeh.isEmpty()) {
+            if(steeh.isEmpty()) {
                 check = false;
                 break;
             }
